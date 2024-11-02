@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+body {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* button */
+
+.btn{
+  padding: 0.5rem 0.75rem;
+  transition: 0.3s ease;
+  scale: 1;
+}
+
+.btn-scale:active{
+  scale:0.8;
+}
+
+.btn-round{
+  border-radius: 0.25rem;
+}
+
+/* card */
+.card{
+  @apply rounded-xl;
+  @apply shadow-lg;
+  transition: 0.3s ease;
+}
+
+.card:hover{
+  transform: translate(-5px,-5px);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.511),
+              8px 8px 8px rgba(27, 27, 27, 0.511);
+
+}
+/* circle */
+.circle{
+  position:absolute;
+  @apply aspect-square;
+  @apply bg-secondary-300;
+  @apply rounded-full;
+  @apply z-0;
+}
+
+
+/* scroll bar */
+/* Body or container element */
+body {
+  @apply bg-neutral-400;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-600; 
+  @apply rounded-lg;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-700;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ 
+  @apply bg-neutral-400;
+
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  @apply bg-neutral-500;
+
+}
+
+
+
+/* text area */
+textarea{
+  resize: none;
+}
+
+/* image upload */
+.upload-image ::-webkit-file-upload-button{
+  @apply bg-primary-800;
+  @apply text-neutral-100;
+  @apply px-4;
+  @apply md:me-4;
+  @apply me-2;
+  @apply py-2;
+  @apply border-0;
+  @apply rounded-s-lg
+}
+
+.upload-image ::-webkit-file-upload-button:hover{
+  @apply bg-primary-700;
+  @apply cursor-pointer;
+}
+
+
+  /* modal */
+  .modal-fade{
+    animation: modal-fade-anim ease-in-out 0.5s forwards; 
+  }
+
+  @keyframes modal-fade-anim {
+    0%{
+      opacity: 0;
+      scale:0;
+    }
+    100%{
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+
+
+
+  .chartjs-chart div#root .chartjs-render-monitor .chartjs-size-monitor .chartjs-chart canvas#line-chart {
+    /* Apply styles to the label */
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold;
+    color: #3182CE; /* Equivalent to text-primary-500 */
+  }
+
+  /* chat app */
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .row .col-1{
+    width: 30%;
+    border:2px solid aqua;
+   
+  }
+  .row .col-2{
+    width: 70%;
+    height: 80vh;
+    border:2px solid aqua;
+  
+  }
+  
+  /* Chat.css */
+  
+  .item {
+    padding: 20px;
+  }
+  
+  .texing {
+    margin-bottom: 20px; 
+  }
+  .list-group {
+   height: 90vh; 
+    /* width: 100%; */
+    overflow-y: auto;
+    
+  }
+  .lastMessageCount{
+    display: flex;
+  }
+  /* .count{
+    background-color: cadetblue;
+    width: 20px;
+    height: 25px;
+    border-radius:5px ;
+    margin: 10px;
+  } */
+  .questions{
+    background-color: rgb(238, 244, 249);
+    width: 20rem;
+    margin: 10px;
+    padding: 1px;
+    border: 2px solid grey;
+    
+  }
+  .outer{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .inner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin: 10px; */
+    padding: 10px;
+    border: 2px solid grey;
+  }
+  .list{
+    padding: 5px;
+  }
+  /* Add any other styling as needed */
+  
+  
